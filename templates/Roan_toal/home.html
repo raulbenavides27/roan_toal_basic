@@ -1,6 +1,54 @@
-{% extends 'base.html' %}
+<!doctype html>
+<html lang="en">
 
-{% block content %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roan Toal</title>
+
+  <!-- Cargar Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Cargar CSS personalizado -->
+  <link rel="stylesheet" href="/static/Roan_toal/css/estilos.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="/static/Roan_toal/images/logo.png" alt="logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'galeria' %}">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'servicios' %}">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'contacto' %}">Contacto</a>
+          </li>
+        </ul>
+
+        <div class="iconos ms-3">
+          <a href="https://www.facebook.com/RoanToal"><img src="/static/Roan_toal/images/face-removebg.png" alt="face"></a>
+        </div>
+        <div class="iconos ms-3">
+          <a href="https://www.instagram.com/"><img src="/static/Roan_toal/images/instagram-removebg.png" alt="insta"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container w-75 mt-3 rounded shadow p-5">
     <!-- Contenido específico de la página -->
     <div class="contenido">
       <!-- Carrusel -->
@@ -51,4 +99,13 @@
           <br>
           <p>El arte es toda forma de expresión de carácter creativo que poseen los seres humanos. Es la capacidad que tiene el hombre para representar sus sentimientos, emociones y percepciones acerca de sus vivencias y el entorno que lo rodea. A través de las diferentes disciplinas artísticas, un individuo puede expresar lo que es y lo que siente mediante una infinidad de formas y técnicas entre las que se destacan el uso de recursos lingüísticos, plásticos y sonoros. En muchos países, el arte es uno de los componentes más importantes de la cultura. A lo largo de la historia, la palabra “arte” se ha ido expandiendo por todo el mundo en todas sus formas. Fuente: https://concepto.de/arte/#ixzz7Q5d84LI6 </p>
       </div>
-{% endblock %}
+    </div>
+
+    <!-- Incluir Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/Roan_toal/js/app.js"></script>
+  </body>
+  
+  </html>
+  
