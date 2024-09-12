@@ -1,3 +1,4 @@
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -5,110 +6,157 @@
     text-decoration: none;
 }
 
+/* Aplicar la fuente Poppins a toda la página */
 body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y legible */
+    font-size: 18px; /* Tamaño de fuente base más grande */
+    color: #f0f0f0; /* Color claro para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    overflow: auto;
+    padding-top: 100px; /* Ajuste para la barra de navegación fija */
+}
+
+/* Fondo de la página */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/Roan_toal/images/fondo1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
-    background-color: #f0f0f0; /* Color de fondo de respaldo */
-    filter: brightness(0.7); /* Reducir el brillo de la imagen de fondo */
+    z-index: -1;
 }
 
-/* Estilos del logo */
-.contlogo {
-    margin: auto;
-    width: 5%; /* Ajusta el tamaño del contenedor del logo */
+/* Capa semitransparente sobre el fondo */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 
+/* Estilos para los títulos */
+h1, h2, h3 {
+    font-weight: 700; /* Texto en negrita */
+    color: #ffffff; /* Color blanco para mejor contraste */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño grande para el título principal */
+}
+
+h2 {
+    font-size: 2rem; /* Tamaño ligeramente más pequeño para subtítulos */
+}
+
+/* Estilos para los párrafos */
+p {
+    font-size: 1.2rem; /* Aumentar tamaño de fuente de los párrafos */
+    color: #f0f0f0; /* Color claro para el texto */
+}
+
+/* Estilo para el logo */
 .logo-img {
-    width: 50%; /* Ajusta el tamaño de la imagen del logo */
-    height: auto; /* Mantiene la proporción original de la imagen */
+    width: 50%;
+    height: auto;
 }
 
-/* Estilos para la barra de navegación */
+/* Barra de navegación */
 .navbar {
-    background-color: #F0F0F0; /* Azul oscuro */
-    padding: 10px; /* Ajusta el relleno según sea necesario */
+    background-color: #fdfd10;
+    height: 100px;
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la página */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
+/* Ajusta el contenido de la barra de navegación */
 .navbar-brand img {
-    width: 50%; /* Ajusta el tamaño de la imagen del logo */
-    height: auto; /* Mantiene la proporción original de la imagen */
+    height: 80px;
+    width: auto;
+    margin: 10px; /* Ajusta el margen si es necesario */
 }
 
-.navbar-nav .nav-link {
-    color: #FFCC00; /* Amarillo para los enlaces de navegación */
-}
-
-.navbar-nav .nav-link.active {
-    color: #FFFFFF; /* Blanco para el enlace activo */
-}
-
+/* Iconos sociales */
 .iconos img {
-    width: 30px; /* Tamaño de los iconos sociales */
+    width: 30px;
 }
 
-/* Fondo de la página y colores */
-.container {
-    background-color: #FFCC00(194, 206, 24, 0.7); /* Fondo con opacidad */
-    padding: 20px;
-    border-radius: 10px;
+/* Estilos para el carrusel */
+.carousel {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto; /* Centra el carrusel horizontalmente */
+    position: relative; /* Posición relativa para los controles del carrusel */
 }
 
-/* Colores de acento */
-.primary-yellow {
-    color: #FFCC00; /* Amarillo */
+.carousel-inner {
+    position: relative; /* Establece posición relativa para permitir el centrado de la imagen */
+    width: 100%;
+    height: 300px; /* Ajusta la altura del carrusel según tus necesidades */
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
 }
 
-.primary-blue {
-    color: #003366; /* Azul oscuro */
+.carousel-inner .carousel-item {
+    position: absolute; /* Posiciona las imágenes en la misma posición */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*display: flex; /* Usa flexbox para centrar la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
 }
 
-.primary-red {
-    color: #990000; /* Rojo oscuro */
+.carousel-inner img {
+    max-width: 100%; /* Asegura que la imagen no se desborde horizontalmente */
+    max-height: 100%; /* Asegura que la imagen no se desborde verticalmente */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el área del contenedor */
 }
 
-/* Fondos y bordes */
-.bg-yellow {
-    background-color: #FFCC00; /* Amarillo */
+/* Estilos para las flechas de navegación del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1); /* Cambia el color a negro */
 }
 
-.bg-blue {
-    background-color: #003366; /* Azul oscuro */
+.carousel-control-prev {
+    left: 0;
 }
 
-.bg-red {
-    background-color: #990000; /* Rojo oscuro */
+.carousel-control-next {
+    right: 0;
+}
+.contenedor_portada{
+    width: 100%;
+    height: 300px; /* Ajusta la altura según la del carrusel */
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
 }
 
-/* Aplicación de colores */
-.header {
-    background-color: #003366; /* Azul oscuro para el encabezado */
-    color: #FFFFFF; /* Blanco para el texto */
-    padding: 10px;
+.contenedor_portada img {
+    margin: auto;
+    width: auto;
+    max-width: 600px;
+    max-height: 300px;
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsión */
 }
 
+/* Estilos para los botones */
 .button {
-    background-color: #FFCC00; /* Amarillo para los botones */
-    color: #003366; /* Azul oscuro para el texto del botón */
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-}
-
-.footer {
-    background-color: #990000; /* Rojo oscuro para el pie de página */
-    color: #FFFFFF; /* Blanco para el texto del pie de página */
-    padding: 10px;
-}
-
-/* Contenedor con acento amarillo */
-.container-accent-yellow {
-    background-color: rgba(255, 204, 0, 0.5); /* Amarillo con opacidad */
-}
-
-.contenido {
-    margin: auto;
-    width: 80%;
-    padding: 2% 5%;
 }
