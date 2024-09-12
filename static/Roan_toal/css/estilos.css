@@ -17,7 +17,7 @@ body {
 /* Estilos del logo */
 .contlogo {
     margin: auto;
-    width: 10%; /* Ajusta el tamaño del contenedor del logo */
+    width: 5%; /* Ajusta el tamaño del contenedor del logo */
 }
 
 .logo-img {
@@ -27,7 +27,7 @@ body {
 
 /* Estilos para la barra de navegación */
 .navbar {
-    background-color: #f3ae19; /* Azul oscuro */
+    background-color: #F0F0F0; /* Azul oscuro */
     padding: 10px; /* Ajusta el relleno según sea necesario */
 }
 
@@ -50,7 +50,7 @@ body {
 
 /* Fondo de la página y colores */
 .container {
-    background-color: rgba(245, 225, 225, 0.7); /* Fondo con opacidad */
+    background-color: #FFCC00(194, 206, 24, 0.7); /* Fondo con opacidad */
     padding: 20px;
     border-radius: 10px;
 }
