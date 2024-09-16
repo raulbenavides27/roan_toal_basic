@@ -19,26 +19,58 @@ body {
     padding-top: 100px; /* Ajuste para la barra de navegación fija */
 }
 #fondo {
-    background-image: url('../images/fondo1.jpg');
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen */
     width: 100%;
-    height: 100vh; /* Ocupar toda la altura de la ventana */
-    position: relative;
-   
-}
-.contenedor_interno {
-    background: rgba(0, 0, 0, 0.651);
-    width: 100%;
-    height: 100%;
-    border: solid;
-   
+   /* height: 850px;*/
+   height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
+    position: relative;  /* Base para que los elementos hijos puedan usar 'absolute' */
+   /* border: 2px solid black;*/
+   margin-bottom: 80px;
 }
 
+#filtro {
+    background: rgba(2, 2, 2, 0.582);  /* Aplica un filtro oscuro */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;  /* Asegura que esté sobre el fondo */
+}
+
+.contenedor_interno {
+    position: absolute;
+    top: 50%;  /* Baja el contenedor más abajo */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centra el contenedor horizontal y verticalmente */
+    width: 85%;
+   /* border: 2px solid white; */
+    padding: 20px;
+    color: #fff;
+    z-index: 2;  /* Asegura que esté sobre el filtro */
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Añade una sombra para darle más profundidad */
+}
+
+
+.contenedor_interno h1 {
+    font-size: 3em; /* Tamaño más grande */
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+.contenedor_interno p {
+    font-size: 1.4rem;
+    color: #f0f0f0;
+  /*  text-align: center;  /* Centra el párrafo */
+}
+
+
 /* Estilos para los títulos */
-h1, h2, h3 {
-    font-weight: 700; /* Texto en negrita */
-    color: #ffffff; /* Color blanco para mejor contraste */
+h1, h2, h3, P {
+  /*  font-weight: 700; /* Texto en negrita */
+    color: #0a0909; /* Color blanco para mejor contraste */
 }
 
 h1 {
@@ -50,10 +82,7 @@ h2 {
 }
 
 /* Estilos para los párrafos */
-p {
-    font-size: 1.2rem; /* Aumentar tamaño de fuente de los párrafos */
-    color: #f0f0f0; /* Color claro para el texto */
-}
+
 
 /* Estilo para el logo */
 .logo-img {
@@ -63,7 +92,7 @@ p {
 
 /* Barra de navegación */
 .navbar {
-    background-color: #fdfd10;
+    background-color: #fdf910;
     height: 100px;
     position: fixed; /* Fija la barra en la parte superior */
     top: 0;
