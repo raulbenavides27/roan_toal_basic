@@ -10,7 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif; /* Fuente moderna y legible */
     font-size: 18px; /* Tamaño de fuente base más grande */
-    color: #f0f0f0; /* Color claro para el texto */
+    /*color: #f0f0f0; /* Color claro para el texto */
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
     position: relative;
     margin: 0;
@@ -23,10 +23,10 @@ body {
     background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
     width: 100%;
-   /* height: 850px;*/
-   height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
+    height: 850px;
+    /* height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
     position: relative;  /* Base para que los elementos hijos puedan usar 'absolute' */
-   /* border: 2px solid black;*/
+    /* border: 2px solid black;*/
    margin-bottom: 80px;
 }
 
@@ -114,11 +114,14 @@ h2 {
 }
 
 
-.contenedor_portada{
-    width: 100%;
-    height: 300px; /* Ajusta la altura según la del carrusel */
+.contenedor_portada {
+    padding: 30px;
+    margin: auto;
+    width: 75%;
+    /*height: 400px; /* Ajusta la altura según la del carrusel */
     align-items: center; /* Centra verticalmente la imagen */
     justify-content: center; /* Centra horizontalmente la imagen */
+    border: 2px solid black;
 }
 
 .contenedor_portada img {
@@ -126,7 +129,10 @@ h2 {
     width: auto;
     max-width: 600px;
     max-height: 300px;
+    overflow: hidden;
     object-fit: cover; /* Mantiene la proporción de la imagen sin distorsión */
+    border-radius: 15px;
+    border: 2px solid black;
 }
 
 /* Estilos para los botones */
@@ -135,4 +141,23 @@ h2 {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+}
+.contenido{
+    margin: auto;
+    text-align: center;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #fdf910;
+    padding: 20px 0;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.text-muted {
+    color: #6c757d !important;
 }
