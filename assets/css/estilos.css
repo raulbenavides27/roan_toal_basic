@@ -10,7 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif; /* Fuente moderna y legible */
     font-size: 18px; /* Tamaño de fuente base más grande */
-    /*color: #f0f0f0; /* Color claro para el texto */
+    background-color: #0045cea2; /* Color claro para el texto */
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
     position: relative;
     margin: 0;
@@ -27,7 +27,7 @@ body {
     /* height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
     position: relative;  /* Base para que los elementos hijos puedan usar 'absolute' */
     /* border: 2px solid black;*/
-   margin-bottom: 80px;
+    /* margin-bottom: 80px;*/
 }
 
 #filtro {
@@ -47,8 +47,7 @@ body {
     transform: translate(-50%, -50%);  /* Centra el contenedor horizontal y verticalmente */
     width: 85%;
    /* border: 2px solid white; */
-    padding: 20px;
-    color: #fff;
+   /* padding: 20px; */
     z-index: 2;  /* Asegura que esté sobre el filtro */
    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Añade una sombra para darle más profundidad */
 }
@@ -68,9 +67,10 @@ body {
 
 
 /* Estilos para los títulos */
-h1, h2, h3, P {
-  /*  font-weight: 700; /* Texto en negrita */
-    color: #0a0909; /* Color blanco para mejor contraste */
+h1, h2, h3 {
+    font-weight: 700; /* Texto en negrita */
+   /* color: #0a0909; /* Color blanco para mejor contraste */
+    color: #f0f0f0;
 }
 
 h1 {
@@ -92,7 +92,7 @@ h2 {
 
 /* Barra de navegación */
 .navbar {
-    background-color: #fdf910;
+    background-color: #FFC300;
     height: 100px;
     position: fixed; /* Fija la barra en la parte superior */
     top: 0;
@@ -119,20 +119,20 @@ h2 {
     margin: auto;
     width: 75%;
     /*height: 400px; /* Ajusta la altura según la del carrusel */
-    align-items: center; /* Centra verticalmente la imagen */
+    /*align-items: center; /* Centra verticalmente la imagen */
     justify-content: center; /* Centra horizontalmente la imagen */
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .contenedor_portada img {
     margin: auto;
     width: auto;
-    max-width: 600px;
-    max-height: 300px;
+    max-width: 700px;
+    max-height: 450px;
     overflow: hidden;
     object-fit: cover; /* Mantiene la proporción de la imagen sin distorsión */
     border-radius: 15px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 /* Estilos para los botones */
@@ -150,7 +150,7 @@ h2 {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: #fdf910;
+    background-color: #FFC300;
     padding: 20px 0;
 }
 
