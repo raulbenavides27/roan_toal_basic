@@ -18,6 +18,40 @@ body {
     overflow: auto;
     padding-top: 100px; /* Ajuste para la barra de navegación fija */
 }
+
+/* Ajustes para pantallas móviles */
+@media (max-width: 768px) {
+
+    /* Ajustes de tamaño de texto en vista móvil */
+    body {
+        font-size: 16px; /* Aumenta ligeramente el tamaño de los textos */
+    }
+
+    /* Ajustar tamaño de los encabezados */
+    h1 {
+        font-size: 2rem; /* Reduce el tamaño del h1 en móviles */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.2rem; /* Aumenta el tamaño de los párrafos para mejorar la legibilidad */
+    }
+
+    /* Ajustes del icono del menú */
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 30px; /* Aumenta el tamaño del icono de menú en móviles */
+    }
+
+    /* Opcional: Ajustes para el botón del menú */
+    .navbar-toggler {
+        padding: 10px; /* Aumenta el área clicable del botón del menú */
+    }
+}
+
 #fondo {
     background-image: url('../images/fondo.jpg');
     background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
