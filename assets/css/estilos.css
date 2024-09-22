@@ -117,7 +117,7 @@ h2 {
 .navbar-brand img {
     height: 80px;
     width: auto;
-    margin: 10px; /* Ajusta el margen si es necesario */
+    /*margin: 10px; /* Ajusta el margen si es necesario */
 }
 
 /* Iconos sociales */
