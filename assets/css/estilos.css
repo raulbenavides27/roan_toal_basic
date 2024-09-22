@@ -85,11 +85,21 @@ h2 {
 
 
 /* Estilo para el logo */
+/* Estilo para el logo por defecto (en pantallas grandes) */
 .logo-img {
-    width: 50%;
+    max-width: 150px; /* Controla el tamaño máximo del logo */
     height: auto;
 }
+/* Ajuste del logo en pantallas móviles */
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 100px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        height: auto;
+    }
 
+  
+   
+}
 /* Barra de navegación */
 .navbar {
     background-color: #FFC300;
@@ -99,6 +109,8 @@ h2 {
     left: 0;
     width: 100%; /* Asegura que ocupe todo el ancho de la página */
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
+      /* Opcional: ajuste del tamaño del navbar en móviles */
+    height: auto; /* Deja que el navbar se ajuste a su contenido */
 }
 
 /* Ajusta el contenido de la barra de navegación */
@@ -145,6 +157,10 @@ h2 {
 .contenido{
     margin: auto;
     text-align: center;
+}
+.container{
+    border: 2px solid black;
+    
 }
 .footer {
     position: relative;
