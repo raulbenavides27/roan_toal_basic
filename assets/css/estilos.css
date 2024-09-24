@@ -27,6 +27,8 @@ body {
         font-size: 16px; /* Aumenta ligeramente el tamaño de los textos */
     }
 
+   
+    
     /* Ajustar tamaño de los encabezados */
     h1 {
         font-size: 2rem; /* Reduce el tamaño del h1 en móviles */
@@ -37,7 +39,7 @@ body {
     }
 
     p {
-        font-size: 1.2rem; /* Aumenta el tamaño de los párrafos para mejorar la legibilidad */
+        font-size: 1.8rem; /* Aumenta el tamaño de los párrafos para mejorar la legibilidad */
     }
 
     /* Ajustes del icono del menú */
@@ -97,6 +99,13 @@ body {
     font-size: 1.4rem;
     color: #f0f0f0;
   /*  text-align: center;  /* Centra el párrafo */
+}
+@media (max-width: 768px){
+
+    .contenedor_interno p {
+        font-size: 1.8rem;
+    }
+        
 }
 
 
