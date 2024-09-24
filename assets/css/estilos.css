@@ -103,8 +103,13 @@ body {
 @media (max-width: 768px){
 
     .contenedor_interno p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
+    .contenedor_interno h1 {
+        font-size: 2em; /* Tamaño más grande */
+        font-weight: 700;
+        color: #ffffff;
+      }
         
 }
 
