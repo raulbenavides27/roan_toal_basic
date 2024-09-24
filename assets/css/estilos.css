@@ -59,8 +59,8 @@ body {
     background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
     width: 100%;
-    height: 850px;
-    /* height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
+    /*height: 850px;*/
+    height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
     position: relative;  /* Base para que los elementos hijos puedan usar 'absolute' */
     /* border: 2px solid black;*/
     /* margin-bottom: 80px;*/
@@ -99,32 +99,16 @@ body {
     font-size: 1.4rem;
     color: #f0f0f0;
 }
-@media (max-width: 768px){
 
+@media (max-width: 768px) {
     .contenedor_interno p {
-        font-size: 1.8rem;
+        font-size: 1.2rem; /* Tamaño adecuado para móviles */
     }
     .contenedor_interno h1 {
-        font-size: 2.1rem; /* Tamaño más grande */
-        font-weight: 700;
-        color: #ffffff;
-      }
-        
+        font-size: 1.8rem;
+    }
 }
 
-
-/* Estilos para los títulos */
-
-
-h1 {
-    font-size: 2.5rem; /* Tamaño grande para el título principal */
-}
-
-h2 {
-    font-size: 2rem; /* Tamaño ligeramente más pequeño para subtítulos */
-}
-
-/* Estilos para los párrafos */
 
 
 /* Estilo para el logo */
@@ -143,9 +127,14 @@ h2 {
   
    
 }
+
 /* Barra de navegación */
+:root {
+    --color-principal: #FFC300;
+    --color-secundario: #0045cea2;
+}
 .navbar {
-    background-color: #FFC300;
+    background-color: var(--color-principal);
     height: 100px;
     position: fixed; /* Fija la barra en la parte superior */
     top: 0;
@@ -196,6 +185,8 @@ h2 {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    background-color: #FFC300; /* Color de fondo */
+    color: #000; /* Texto oscuro para mejor contraste */
 }
 .contenido{
     margin: auto;
