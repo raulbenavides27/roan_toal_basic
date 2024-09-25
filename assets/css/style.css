@@ -1,0 +1,74 @@
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+  .logo-img {
+    max-width: 90px; /* Controla el tamaño máximo del logo */
+    height: auto;
+}
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 60px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        height: auto;
+    }
+
+}
+:root {
+    --color-principal: #FFC300;
+    --color-secundario: #0045cea2;
+}
+.navbar {
+    background-color: var(--color-principal);
+
+}
+.offcanvas{
+    background-color: var(--color-principal);
+}
+.iconos img {
+    width: 30px;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-principal);
+    padding: 20px 0;
+}
+#fondo {
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    width: 100%;
+    /*height: 850px;*/
+    height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
+    position: relative;  /* Base para que los elementos hijos puedan usar 'absolute' */
+    /* border: 2px solid black;*/
+    /* margin-bottom: 80px;*/
+}
+#filtro {
+    background: rgba(2, 2, 2, 0.582);  /* Aplica un filtro oscuro */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;  /* Asegura que esté sobre el fondo */
+    color: white;
+}
+.contenedor_interno {
+    position: absolute;
+    top: 50%;  /* Baja el contenedor más abajo */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centra el contenedor horizontal y verticalmente */
+    width: 85%;
+   /* border: 2px solid white; */
+   /* padding: 20px; */
+    z-index: 2;  /* Asegura que esté sobre el filtro */
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Añade una sombra para darle más profundidad */
+}
+body{
+    background-color: #0045cea2;
+}
+
+
