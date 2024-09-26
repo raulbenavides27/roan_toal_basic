@@ -71,13 +71,15 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    
+    font-family: "Montagu Slab", serif;
     background-color: #0045cea2;
     /*display: flex;*/
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    
 }
 .contact-form {
    
@@ -116,4 +118,19 @@ body {
 .contact-form button:hover {
     background-color: #0056b3;
 }
-
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('fonts/ethnocentric_rg.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zekton';
+    src: url('fonts/zekton_rg.otf') format('truetype'); 
+}
+/*nav span {
+    font-family:'Ethnocentric', sans-serif;
+}
+h5 {
+    font-family:'Ethnocentric', sans-serif;
+}*/
