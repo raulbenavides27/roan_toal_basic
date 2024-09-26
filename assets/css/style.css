@@ -134,3 +134,15 @@ body {
 h5 {
     font-family:'Ethnocentric', sans-serif;
 }*/
+.icon {
+    fill: white;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+   
+  }
+  a
+  {
+    text-decoration: none;
+  }
+  
