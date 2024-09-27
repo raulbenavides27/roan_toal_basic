@@ -72,7 +72,7 @@
 
 body {
     
-    font-family: "Montagu Slab", serif;
+   /* font-family: "Montagu Slab", serif;*/
     background-color: #0045cea2;
     /*display: flex;*/
     justify-content: center;
@@ -145,4 +145,12 @@ h5 {
   {
     text-decoration: none;
   }
-  
+  @media (max-width: 768px) {
+    .contact-form {
+        width: 90%; /* Asegura que el formulario se adapte a pantallas más pequeñas */
+        padding: 15px;
+    }
+}
+.contact-form button:focus {
+    outline: 3px solid #0056b3; /* Borde azul más oscuro */
+}
