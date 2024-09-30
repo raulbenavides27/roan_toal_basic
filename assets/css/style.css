@@ -154,3 +154,33 @@ h5 {
 .contact-form button:focus {
     outline: 3px solid #0056b3; /* Borde azul más oscuro */
 }
+.transparent-card {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    box-shadow: none; /* Sin sombra */
+    border: 2px solid white;
+}
+
+.card-img-top {
+    width: 100%; /* Mantiene la imagen responsiva */
+    /*height: 200px; /* Define la altura más pequeña */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
+    border-radius: 10px; /* Redondear los bordes de la imagen */
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.card-body {
+    text-align: center; /* Centrar el texto */
+    color: #fff; /* Ajusta el color del texto según el fondo */
+   /* padding: 20px;*/
+    border: 2px solid green;
+}
+.custom-container {
+    width: 75%;  /* El contenedor ocupa el 75% del ancho de la pantalla */
+    margin: auto;  /* Centra el contenedor */
+    border: 2px solid red;
+    padding: auto;
+    /*padding: 20px;*/
+}
+
