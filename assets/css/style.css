@@ -54,6 +54,8 @@
   color: white;
 }
 .contenedor_interno {
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 2s ease-in-out; /* Transición suave */
   position: absolute;
   top: 50%; /* Baja el contenedor más abajo */
   left: 50%;
@@ -66,6 +68,9 @@
   /* padding: 20px; */
   z-index: 2; /* Asegura que esté sobre el filtro */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Añade una sombra para darle más profundidad */
+}
+.contenedor_interno.visible {
+  opacity: 1; /* Visible cuando la clase 'visible' es aplicada */
 }
 
 body {
@@ -163,17 +168,7 @@ a {
   /* box-shadow: none; Sin sombra */
   /* border: 2px solid white; */
 }
-.card-img-top {
-  width: 100%; /* Mantiene la imagen responsiva */
-  /*height: 200px; /* Define la altura más pequeña */
-  object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
-  border-radius: 10px; /* Redondear los bordes de la imagen */
-  /* border: 2px solid black; */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  padding: auto;
-  margin: auto;
-  
-}
+
 
 .texto_proyecto {
 
@@ -200,8 +195,38 @@ a {
   text-decoration: none; /* Quitar el subrayado del enlace */
   border-radius: 5px; /* Bordes redondeados */
   transition: background-color 0.3s ease; /* Animación suave para el color */
+  
 }
 
 .btn-ver-mas:hover {
   background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+.card-img-top {
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 2s ease-in-out; /* Transición suave */
+  width: 100%; /* Mantiene la imagen responsiva */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
+  border-radius: 10px; /* Redondear los bordes de la imagen */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: auto;
+  margin: auto;
+}
+
+.card-img-top.visible {
+  opacity: 1; /* Visible cuando la clase 'visible' es aplicada */
+}
+
+.card-img-top {
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 2s ease-in-out; /* Transición suave */
+  width: 100%; /* Mantiene la imagen responsiva */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
+  border-radius: 10px; /* Redondear los bordes de la imagen */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: auto;
+  margin: auto;
+}
+
+.card-img-top.visible {
+  opacity: 1; /* Visible cuando la clase 'visible' es aplicada */
 }
