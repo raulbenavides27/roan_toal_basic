@@ -1,132 +1,127 @@
-
 .selector-for-some-widget {
-    box-sizing: content-box;
-  }
+  box-sizing: content-box;
+}
 
-  .logo-img {
-    max-width: 90px; /* Controla el tamaño máximo del logo */
-    height: auto;
+.logo-img {
+  max-width: 90px; /* Controla el tamaño máximo del logo */
+  height: auto;
 }
 @media (max-width: 768px) {
-    .logo-img {
-        max-width: 60px; /* Reduce el tamaño del logo en pantallas pequeñas */
-        height: auto;
-    }
-
+  .logo-img {
+    max-width: 60px; /* Reduce el tamaño del logo en pantallas pequeñas */
+    height: auto;
+  }
 }
 :root {
-    --color-principal: #FFC300;
-    --color-secundario: #0045cea2;
+  --color-principal: #ffc300;
+  --color-secundario: #0045cea2;
 }
 .navbar {
-    background-color: var(--color-principal);
-
+  background-color: var(--color-principal);
 }
-.offcanvas{
-    background-color: var(--color-principal);
+.offcanvas {
+  background-color: var(--color-principal);
 }
 .iconos img {
-    width: 30px;
+  width: 30px;
 }
 .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--color-principal);
-    padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-principal);
+  padding: 20px 0;
 }
 #fondo {
-    background-image: url('../images/fondo.jpg');
-    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
-    background-position: center;  /* Centra la imagen */
-    width: 100%;
-    /*height: 850px;*/
-    height: 100vh;  /* Hace que el fondo ocupe toda la altura visible */
-    position: relative;  /* Base para que los elementos hijos puedan usar 'absolute' */
-    /* border: 2px solid black;*/
-    /* margin-bottom: 80px;*/
+  background-image: url("../images/fondo.jpg");
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  width: 100%;
+  /*height: 850px;*/
+  height: 100vh; /* Hace que el fondo ocupe toda la altura visible */
+  position: relative; /* Base para que los elementos hijos puedan usar 'absolute' */
+  /* border: 2px solid black;*/
+  /* margin-bottom: 80px;*/
 }
 #filtro {
-    background: rgba(2, 2, 2, 0.582);  /* Aplica un filtro oscuro */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;  /* Asegura que esté sobre el fondo */
-    color: white;
+  background: rgba(2, 2, 2, 0.582); /* Aplica un filtro oscuro */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Asegura que esté sobre el fondo */
+  color: white;
 }
 .contenedor_interno {
-
-    position: absolute;
-    top: 50%;  /* Baja el contenedor más abajo */
-    left: 50%;
-    transform: translate(-50%, -50%);  /* Centra el contenedor horizontal y verticalmente */
-    width: 85%;
-   /* border: 2px solid white; */
-   /* padding: 20px; */
-    z-index: 2;  /* Asegura que esté sobre el filtro */
-   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Añade una sombra para darle más profundidad */
+  position: absolute;
+  top: 50%; /* Baja el contenedor más abajo */
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centra el contenedor horizontal y verticalmente */
+  width: 85%;
+  /* border: 2px solid white; */
+  /* padding: 20px; */
+  z-index: 2; /* Asegura que esté sobre el filtro */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Añade una sombra para darle más profundidad */
 }
-
 
 body {
-    
-   /* font-family: "Montagu Slab", serif;*/
-    background-color: #0045cea2;
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    
+  /* font-family: "Montagu Slab", serif;*/
+  background-color: #0045cea2;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 .contact-form {
-   
-    margin: auto;
-    background-color: var(--color-principal);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+  margin: auto;
+  background-color: var(--color-principal);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
 .contact-form h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .contact-form label {
-    display: block;
-    margin: 10px 0 5px;
+  display: block;
+  margin: 10px 0 5px;
 }
 .contact-form input,
 .contact-form select,
 .contact-form textarea,
 .contact-form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 .contact-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .contact-form button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 @font-face {
-    font-family: 'Ethnocentric';
-    src: url('fonts/ethnocentric_rg.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Ethnocentric";
+  src: url("fonts/ethnocentric_rg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Zekton';
-    src: url('fonts/zekton_rg.otf') format('truetype'); 
+  font-family: "Zekton";
+  src: url("fonts/zekton_rg.otf") format("truetype");
 }
 /*nav span {
     font-family:'Ethnocentric', sans-serif;
@@ -135,52 +130,78 @@ h5 {
     font-family:'Ethnocentric', sans-serif;
 }*/
 .icon {
-    fill: white;
-    margin: 5px;
-    width: 25px;
-    height: 25px;
-   
+  fill: white;
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+}
+a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .contact-form {
+    width: 90%; /* Asegura que el formulario se adapte a pantallas más pequeñas */
+    padding: 15px;
   }
-  a
-  {
-    text-decoration: none;
-  }
-  @media (max-width: 768px) {
-    .contact-form {
-        width: 90%; /* Asegura que el formulario se adapte a pantallas más pequeñas */
-        padding: 15px;
-    }
 }
 .contact-form button:focus {
-    outline: 3px solid #0056b3; /* Borde azul más oscuro */
+  outline: 3px solid #0056b3; /* Borde azul más oscuro */
+}
+.proyectos {
+  margin: auto;
+}
+.contenedor_img_proyecto {
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  box-shadow: none; /* Sin sombra */
+  border: 2px solid white;
+  max-width: 300px;
 }
 .transparent-card {
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Sin borde */
-    box-shadow: none; /* Sin sombra */
-    border: 2px solid white;
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  /* box-shadow: none; Sin sombra */
+  /* border: 2px solid white; */
 }
-
 .card-img-top {
-    width: 100%; /* Mantiene la imagen responsiva */
-    /*height: 200px; /* Define la altura más pequeña */
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
-    border-radius: 10px; /* Redondear los bordes de la imagen */
-    border: 2px solid black;
-    padding: 10px;
+  width: 100%; /* Mantiene la imagen responsiva */
+  /*height: 200px; /* Define la altura más pequeña */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
+  border-radius: 10px; /* Redondear los bordes de la imagen */
+  /* border: 2px solid black; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: auto;
+  margin: auto;
+  
 }
 
-.card-body {
-    text-align: center; /* Centrar el texto */
-    color: #fff; /* Ajusta el color del texto según el fondo */
-   /* padding: 20px;*/
-    border: 2px solid green;
+.texto_proyecto {
+
+  text-align: center; /* Centrar el texto */
+  /* color: #fff; Ajusta el color del texto según el fondo */
+  padding-top: 20px;
+  /* border: 2px solid green; */
 }
 .custom-container {
-    width: 75%;  /* El contenedor ocupa el 75% del ancho de la pantalla */
-    margin: auto;  /* Centra el contenedor */
-    border: 2px solid red;
-    padding: auto;
-    /*padding: 20px;*/
+  width: 75%; /* El contenedor ocupa el 75% del ancho de la pantalla */
+  margin: auto; /* Centra el contenedor */
+  /* border: 2px solid red; */
+  padding: auto;
+  /*padding: 20px;*/
+}
+/* .row{
+     border: 2px solid blue; 
+} */
+.btn-ver-mas {
+  /* display: inline-block;*/
+  padding: 10px 20px;
+  background-color: #0045cea2; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Quitar el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Animación suave para el color */
 }
 
+.btn-ver-mas:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
