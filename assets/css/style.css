@@ -161,6 +161,7 @@ a {
   box-shadow: none; /* Sin sombra */
   border: 2px solid white;
   max-width: 300px;
+  max-width: 300px;
 }
 .transparent-card {
   background-color: transparent; /* Fondo transparente */
@@ -205,6 +206,7 @@ a {
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 2s ease-in-out; /* Transición suave */
   width: 100%; /* Mantiene la imagen responsiva */
+  height: 300px; 
   object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
   border-radius: 10px; /* Redondear los bordes de la imagen */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -218,7 +220,7 @@ a {
 
 .card-img-top {
   opacity: 0; /* Inicialmente oculto */
-  transition: opacity 2s ease-in-out; /* Transición suave */
+  transition: opacity 1.5s ease-in-out; /* Transición suave */
   width: 100%; /* Mantiene la imagen responsiva */
   object-fit: cover; /* Asegura que la imagen se recorte correctamente sin deformarse */
   border-radius: 10px; /* Redondear los bordes de la imagen */
