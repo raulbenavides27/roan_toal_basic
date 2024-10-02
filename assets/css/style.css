@@ -35,8 +35,8 @@ h1, h2, h3 {
 @media (min-width: 992px) {
   /* Estilo para el título de la navbar en escritorio */
   .navbar-brand {
-      font-size: 2rem; /* Aumenta el tamaño solo en escritorio */
-      font-weight: bold;
+      font-size: 1.6rem; /* Aumenta el tamaño solo en escritorio */
+     
   }
 
   /* Estilo para los ítems del menú en escritorio */
@@ -49,6 +49,7 @@ h1, h2, h3 {
   /* Estilo hover para los enlaces del menú en escritorio */
   .navbar-nav .nav-link:hover {
       /* color: #0084ff; Cambia el color al pasar el ratón */
+      font-size: 1.2rem;
       text-decoration: underline; /* Añade subrayado */
       transition: all 0.3s ease;/* Efecto de transición suave */
   }
