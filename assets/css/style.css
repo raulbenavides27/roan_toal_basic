@@ -31,9 +31,34 @@ h1, h2, h3 {
   --color-principal: #ffc300;
   --color-secundario: #0045cea2;
 }
+
+@media (min-width: 992px) {
+  /* Estilo para el título de la navbar en escritorio */
+  .navbar-brand {
+      font-size: 2rem; /* Aumenta el tamaño solo en escritorio */
+      font-weight: bold;
+  }
+
+  /* Estilo para los ítems del menú en escritorio */
+  .navbar-nav .nav-link {
+    font-size: 1.1rem; /* Aumenta el tamaño de los enlaces solo en escritorio */
+  /*  padding: 10px 15px; /* Añade separación interna a los enlaces */
+    margin-right: 35px; /* Espacio entre los enlaces */
+}
+
+  /* Estilo hover para los enlaces del menú en escritorio */
+  .navbar-nav .nav-link:hover {
+      /* color: #0084ff; Cambia el color al pasar el ratón */
+      text-decoration: underline; /* Añade subrayado */
+      transition: all 0.3s ease;/* Efecto de transición suave */
+  }
+}
+
 .navbar {
   background-color: var(--color-principal);
 }
+
+
 .offcanvas {
   background-color: var(--color-principal);
 }
@@ -69,20 +94,17 @@ h1, h2, h3 {
   color: white;
 }
 .contenedor_interno {
+  width: 75%;
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 2s ease-in-out; /* Transición suave */
   position: absolute;
-  top: 50%; /* Baja el contenedor más abajo */
+ top: 50%; 
   left: 50%;
   transform: translate(
     -50%,
     -50%
-  ); /* Centra el contenedor horizontal y verticalmente */
-  width: 85%;
-  /* border: 2px solid white; */
-  /* padding: 20px; */
-  z-index: 2; /* Asegura que esté sobre el filtro */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Añade una sombra para darle más profundidad */
+  );
+ 
 }
 .contenedor_interno.visible {
   opacity: 1; /* Visible cuando la clase 'visible' es aplicada */
