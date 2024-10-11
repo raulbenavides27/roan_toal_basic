@@ -271,3 +271,12 @@ a {
 .card-img-top.visible {
   opacity: 1; /* Visible cuando la clase 'visible' es aplicada */
 }
+.img-fluid {
+max-height: 400px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+opacity: 0; /* Inicialmente oculto */
+transition: opacity 1.5s ease-in-out; /* Transición suave */
+}
+.img-fluid.visible{
+  opacity: 1;
+}
