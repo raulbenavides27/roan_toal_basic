@@ -6,15 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roan Toal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" sizes="32x32" href="assets/images/logo.png" type="image/png">
-  <link rel="icon" sizes="192x192" href="assets/images/logo.png" type="image/png">
-
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- icono superion en navegador  -->
+  <link rel="icon" sizes="32x32" href="assets/images/logo.png" type="image/png">
+  <link rel="icon" sizes="192x192" href="assets/images/logo.png" type="image/png">
+  <!-- hoja de estilos  -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -25,25 +23,7 @@
         <img src="assets/images/logo1.png" alt="logo" class="logo-img">
       </a>
       <span class="navbar-brand mb-0 h1">Roan Toal</span>
-      <!--  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contactos.html">Contacto</a>
-            </li>
-          </ul> 
-        </div>-->
+
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -69,7 +49,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contactos.html">Contacto</a>
             </li>
-           
+
           </ul>
 
         </div>
@@ -100,58 +80,83 @@
       </div>
 
     </div>
-
   </nav>
-  <div class="container mt-5">
-    <h1 class="text mb-5">Proyectos</h1>
+  <div class="container projects-section">
+    <!-- Título de la sección -->
     <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <img src="assets/images/RoanToal_1.jpg" class="card-img-top" alt="Proyecto 1">
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 1</h5>
-            <p class="card-text">Descripción breve del Proyecto 1.</p>
-          </div>
+        <div class="col-12 text-center">
+            <h2 class="section-title">Nuestros Proyectos</h2>
+            <p class="section-subtitle">Conoce algunos de los proyectos que hemos realizado</p>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <img src="assets/images/RoanToal_2.jpg" class="card-img-top" alt="Proyecto 2">
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 2</h5>
-            <p class="card-text">Descripción breve del Proyecto 2.</p>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <div class="card">
-          <img src="assets/images/RoanToal_3.jpg" class="card-img-top" alt="Proyecto 3">
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 3</h5>
-            <p class="card-text">Descripción breve del Proyecto 3.</p>
-          </div>
+
+    <!-- Proyecto 1 -->
+    <div class="project-group">
+        <h3 class="project-title">Proyecto 1</h3>
+        <p class="project-date">Fecha: Enero 2024</p>
+        <p class="project-description">Descripción: Este proyecto consistió en la instalación de sistemas eléctricos para una planta industrial.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="imagen-proyecto1a.jpg" class="img-fluid rounded" alt="Imagen del proyecto 1">
+            </div>
+            <div class="col-md-4">
+                <img src="imagen-proyecto1b.jpg" class="img-fluid rounded" alt="Imagen del proyecto 1">
+            </div>
+            <div class="col-md-4">
+                <img src="imagen-proyecto1c.jpg" class="img-fluid rounded" alt="Imagen del proyecto 1">
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <img src="assets/images/logo.png" class="card-img-top" alt="Proyecto 4">
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 4</h5>
-            <p class="card-text">Descripción breve del Proyecto 4.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+
+    <!-- Proyecto 2 -->
+    <div class="project-group">
+        <h3 class="project-title">Proyecto 2</h3>
+        <p class="project-date">Fecha: Febrero 2024</p>
+        <p class="project-description">Descripción: Diseño y ejecución de un sistema de iluminación inteligente para oficinas corporativas.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="imagen-proyecto2a.jpg" class="img-fluid rounded" alt="Imagen del proyecto 2">
+            </div>
+            <div class="col-md-4">
+                <img src="imagen-proyecto2b.jpg" class="img-fluid rounded" alt="Imagen del proyecto 2">
+            </div>
+            <div class="col-md-4">
+                <img src="imagen-proyecto2c.jpg" class="img-fluid rounded" alt="Imagen del proyecto 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
   <footer class="footer mt-auto py-3 ">
     <div class="container text-center">
       <div class="row">
         <div class="col-md-4">
           <h5>Contacto</h5>
-          <p>Tel: +569 000 000 000</p>
+          <p>Tel: +569 6438 7702
+            <a class="" href="https://wa.me/56964387702?text=Hola%20me%20interesa%20más%20información" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg>
+            </a>
+          </p>
+          <p>Tel: +569 8397 5091
+            <a class="" href="https://wa.me/56983975091?text=Hola%20me%20interesa%20más%20información" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg>
+            </a>
+          </p>
           <p>Email: contacto@roantoal.com</p>
+          <a class="btn btn-success" href="https://wa.me/56964387702?text=Hola%20me%20interesa%20más%20información"
+            target="_blank">
+            Contactar por WhatsApp
+          </a>
         </div>
         <div class="col-md-4">
           <h5>Síguenos</h5>
@@ -189,6 +194,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>
