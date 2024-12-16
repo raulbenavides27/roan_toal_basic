@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "ROAN_TOAL_BASIC",
+    "public": "./",
     "ignore": [
       "firebase.json",
       "**/.*",
