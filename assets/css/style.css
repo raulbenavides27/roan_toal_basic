@@ -295,15 +295,15 @@ transition: opacity 1.5s ease-in-out; /* Transición suave */
   margin-bottom: 10px;
 }
 
-.project-date, .project-description {
+/*.project-date, .project-description {
   color: #777;
   margin-bottom: 10px;
-}
+}*/
 
-.img-fluid {
-  width: 100%;
+.img-miembros {
+  width: 50%;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 .section-title {
@@ -313,8 +313,8 @@ transition: opacity 1.5s ease-in-out; /* Transición suave */
   margin-bottom: 20px;
 }
 
-.section-subtitle {
+/*.section-subtitle {
   font-size: 1rem;
   color: #777;
   margin-bottom: 30px;
-}
+}*/
