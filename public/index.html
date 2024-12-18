@@ -302,7 +302,19 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>
-
+  <script>
+    // Lista de rutas válidas
+    const rutasValidas = ['index.html'];
+  
+    // Obtener la URL actual
+    const rutaActual = window.location.pathname.split('/').pop();
+  
+    // Redirigir si la ruta no es válida
+    if (!rutasValidas.includes(rutaActual) && rutaActual !== 'mantenimiento.html') {
+      window.location.href = 'mantenimiento.html';
+    }
+  </script>
+  
 </body>
 
 </html>
