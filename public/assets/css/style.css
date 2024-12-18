@@ -322,7 +322,8 @@ transition: opacity 1.5s ease-in-out; /* Transición suave */
 #cont_proyect
 {
   padding: 20px;
-  width: 800px;
+  width: 1000px;
+  height: 600px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: auto 1fr;
