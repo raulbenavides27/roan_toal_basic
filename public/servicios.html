@@ -1,24 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Roan Toal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" sizes="32x32" href="assets/images/logo.png" type="image/png">
-  <link rel="icon" sizes="192x192" href="assets/images/logo.png" type="image/png">
+  <title>Roan Toal - Servicios</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .servicio-titulo {
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .servicio-titulo:hover {
+      color: #f8b400 !important;
+    }
+
+    .chevron-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .collapsed .chevron-icon {
+      transform: rotate(0deg);
+    }
+
+    .expanded .chevron-icon {
+      transform: rotate(180deg);
+    }
+
+    .cont_servicio {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .cont_servicio:hover {
+      box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    }
+
+    .collapse {
+      transition: all 0.4s ease-in-out;
+    }
+  </style>
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -85,83 +119,144 @@
 
   </nav>
   <div class="container mt-5 w-75">
-    <div class="cont_servicio">
-      <h3>Certificacion y Legalización de Instalaciones Eléctricas.</h3>
-      <p>Aseguramos que sus instalaciones cumplan con las normas vigentes.</p>
-      <h5>Servicios Incluidos:</h5>
-      <ul>
-        <li>inspección y evaluación técnica.</li>
-        <li>Tramitacion de certificacionesante entidades reguladoras (TE1, TE2, TE3, TE4, TE5, TE6).</li>
-        <li>Regularización de instalaciones técnicos.</li>
-        <li>Elaboración de informes técnicos</li>
-        <li>Tramitación ENEL, CGE, Entre otros.</li>
-      </ul>
-    </div>
-    <div class="cont_servicio">
-      <h3>Instalaciones Eléctricas Residenciales</h3>
-      <p>
-        Consulte su instalación completa o parcial de sus sistemas eléctricos en viviendas,
-        garantizando seguridad y eficiencia energética.
-      </p>
-      <h5>Servicios Incluidos:</h5>
-      <ul>
-        <li>Cableado eléctrico.</li>
-        <li>Instalación de tableros eléctricos.</li>
-        <li>Configuración de sistemas de iluminación.</li>
-        <li>Montaje de interruptores y enchufes.</li>
-        <li>Puesta a tierra y protección contra sobretensiones.</li>
-      </ul>
-    </div>
-    <div class="cont_servicio">
-      <h3>Mantenimiento Eléctrico Preventivo y Correctivo.</h3>
-      <p>Servicio integral de mantenimiento para asegurar el funcionamiento óptimo de sus sistemas eléctricos.</p>
-      <h5>Servicios Incluidos:</h5>
-      <ul>
-        <li>Inspección y prueba de sistemas eléctricos.</li>
-        <li>Reemplazo de componentes defectuosos.</li>
-        <li>Diagnóstico y reparación de fallos eléctricos.</li>
-        <li>Limpieza y ajuste de tableros eléctricos.</li>
-        <li>Servicio de urgencias 24/7.</li>
-      </ul>
-    </div>
-    <div class="cont_servicio">
-      <h3>Energía Renovable y Sostenibilidad</h3>
-      <p>Proyectos y soluciones para un futuro más
-        sostenible.</p>
-      <h5>Servicios Incluidos:</h5>
-      <ul>
-        <li>Instalación de paneles solares.</li>
-        <li>Sistemas de energía eólica.</li>
-        <li>Soluciones de almacenamiento de energía.</li>
-        <li>Implementación de sistemas de reciclaje y aprovechamiento de recursos.</li>
-        <li>Certificación de edificios sostenibles.</li>
-      </ul>
-    </div>
-    <div class="cont_servicio">
-      <h3>Asesorías y consultoría.</h3>
-      <p>Asesoramiento para optimizar el consumo energético en hogares y empresas.</p>
-      <h5>Servicios Incluidos:</h5>
-      <ul>
-        <li>Auditorías energéticas.</li>
-        <li>Propuestas de mejoras en eficiencia energética.</li>
-        <li>Instalación de sistemas de energía renovable (paneles solares, eólicos, etc).</li>
-        <li>Análisis de costos y retorno de inversión.</li>
-      </ul>
-    </div>
-    <div class="cont_servicio">
-      <h3>Gestión de Proyectos de Construcción</h3>
-      <p>Supervisión y coordinación de todas las etapas del proyecto de construcción.</p>
-      <h5>Servicios Incluidos:</h5>
-      <ul>
-        <li>Planificación de tiempos y recursos.</li>
-        <li>Coordinación de contratistas y subcontratistas.</li>
-        <li>Gestión de materiales y suministros.</li>
-        <li>Control de calidad y seguridad en obra.</li>
-        <li>Entrega y cierre del proyecto con garantía de calidad.</li>
-      </ul>
-    </div>
-  </div>
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
 
+    <div class="row">
+      <!-- Servicio 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="cont_servicio">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-certificate fa-3x me-3 text-white"></i>
+            <h4 class="servicio-titulo text-white" data-bs-toggle="collapse" href="#servicio1">
+              Certificación y Legalización <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </h4>
+          </div>
+          <p>Aseguramos que sus instalaciones cumplan con las normas vigentes.</p>
+          <div class="collapse" id="servicio1">
+            <h5>Servicios Incluidos:</h5>
+            <ul>
+              <li>Inspección y evaluación técnica.</li>
+              <li>Tramitación de certificaciones TE1, TE2, TE3, TE4, TE5, TE6.</li>
+              <li>Regularización de instalaciones técnicas.</li>
+              <li>Elaboración de informes técnicos.</li>
+              <li>Tramitación ENEL, CGE y otros.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="cont_servicio">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-house fa-3x me-3 text-white"></i>
+            <h4 class="servicio-titulo text-white" data-bs-toggle="collapse" href="#servicio2">
+              Instalaciones Eléctricas Residenciales <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </h4>
+          </div>
+          <p>Instalación completa o parcial de sistemas eléctricos en viviendas.</p>
+          <div class="collapse" id="servicio2">
+            <h5>Servicios Incluidos:</h5>
+            <ul>
+              <li>Cableado eléctrico.</li>
+              <li>Instalación de tableros eléctricos.</li>
+              <li>Configuración de sistemas de iluminación.</li>
+              <li>Montaje de interruptores y enchufes.</li>
+              <li>Puesta a tierra y protección contra sobretensiones.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="cont_servicio">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-tools fa-3x me-3 text-white"></i>
+            <h4 class="servicio-titulo text-white" data-bs-toggle="collapse" href="#servicio3">
+              Mantenimiento Eléctrico <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </h4>
+          </div>
+          <p>Garantizamos el óptimo funcionamiento de sus sistemas eléctricos.</p>
+          <div class="collapse" id="servicio3">
+            <h5>Servicios Incluidos:</h5>
+            <ul>
+              <li>Inspección y prueba de sistemas eléctricos.</li>
+              <li>Reemplazo de componentes defectuosos.</li>
+              <li>Diagnóstico y reparación de fallos eléctricos.</li>
+              <li>Limpieza y ajuste de tableros eléctricos.</li>
+              <li>Servicio de urgencias 24/7.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="cont_servicio">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-solar-panel fa-3x me-3 text-white"></i>
+            <h4 class="servicio-titulo text-white" data-bs-toggle="collapse" href="#servicio4">
+              Energía Renovable <i class="fa-solid fa-chevron-down chevron-icon"></i>
+            </h4>
+          </div>
+          <p>Proyectos y soluciones para un futuro más sostenible.</p>
+          <div class="collapse" id="servicio4">
+            <h5>Servicios Incluidos:</h5>
+            <ul>
+              <li>Instalación de paneles solares.</li>
+              <li>Soluciones de almacenamiento de energía.</li>
+              <li>Implementación de sistemas de reciclaje.</li>
+              <li>Certificación de edificios sostenibles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 5 -->
+      <div class="col-md-6 mb-4">
+        <div class="cont_servicio">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-clipboard-list fa-3x me-3 text-white"></i>
+            <h4 class="servicio-titulo text-white" data-bs-toggle="collapse" href="#servicio5">Asesorías y Consultoría<i class="fa-solid fa-chevron-down chevron-icon"></i></h4>
+          </div>
+          <p>Asesoramiento para optimizar el consumo energético en hogares y empresas.</p>
+          <div class="collapse" id="servicio5">
+            <h5>Servicios Incluidos:</h5>
+            <ul>
+              <li>Auditorías energéticas.</li>
+              <li>Propuestas de mejoras en eficiencia energética.</li>
+              <li>Instalación de sistemas de energía renovable (paneles solares, eólicos, etc).</li>
+              <li>Análisis de costos y retorno de inversión.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 6 -->
+      <div class="col-md-6 mb-4">
+        <div class="cont_servicio">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-building fa-3x me-3 text-white"></i>
+            <h4 class="servicio-titulo text-white" data-bs-toggle="collapse" href="#servicio6">Gestión de Proyectos de Construcción <i class="fa-solid fa-chevron-down chevron-icon"></i></h4>
+          </div>
+          <p>Supervisión y coordinación de todas las etapas del proyecto de construcción.</p>
+          <div class="collapse" id="servicio6">
+            <h5>Servicios Incluidos:</h5>
+            <ul>
+              <li>Planificación de tiempos y recursos.</li>
+              <li>Coordinación de contratistas y subcontratistas.</li>
+              <li>Gestión de materiales y suministros.</li>
+              <li>Control de calidad y seguridad en obra.</li>
+              <li>Entrega y cierre del proyecto con garantía de calidad.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  
   <footer class="footer mt-auto py-3 ">
     <div class="container text-center">
       <div class="row">
@@ -224,9 +319,20 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.servicio-titulo').forEach(item => {
+      item.addEventListener('click', function () {
+        const icon = this.querySelector('.chevron-icon');
+        if (this.classList.contains('collapsed')) {
+          icon.classList.add('expanded');
+        } else {
+          icon.classList.remove('expanded');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
